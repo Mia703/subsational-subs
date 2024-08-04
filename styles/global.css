@@ -1,0 +1,121 @@
+/* =================== imported fonts =================== */
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =================== global variables =================== */
+:root {
+	--primary-pink: #FEBAED;
+	--primary-green: #AEA434;
+	--primary-blue: #76B3D0;
+	--primary-orange: #FF6C1F;
+	--primary-yellow: #FDB52A;
+	--primary-blacK: black;
+	--primary-white: white;
+	--primary-transition: 200ms ease-in;
+	--primary-button-transition: 100ms ease-in;
+}
+
+/* =================== reset default styles =================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* =================== base page styles =================== */
+body {
+	font-family: "Anybody", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	background-color: var(--primary-white);
+	color: var(--primary-blacK);
+}
+
+/* =================== font styles =================== */
+h1 {
+	font-weight: 700;
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+h3 {
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+p,
+a {
+	font-size: 1em;
+	line-height: 129%;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+img,
+video {
+	width: 100%;
+}
+
+.outline-text {
+	text-shadow: 4px 4px 0 var(--primary-blacK),
+		-4px 4px 0 var(--primary-blacK),
+		-4px -4px 0 var(--primary-blacK),
+		4px -4px 0 var(--primary-blacK);
+}
+
+button, .button {
+	padding: 8px 10px;
+	border-radius: 10000px;
+	border: 4px solid var(--primary-blacK);
+	font-family: "Anybody", sans-serif;
+	font-weight: 500;
+	color: var(--primary-blacK);
+	font-size: 0.8em;
+	cursor: pointer;
+}
+
+button.pink, .button.pink {
+	background-color: var(--primary-pink);
+}
+
+button.green, .button.green {
+	background-color: var(--primary-green);
+}
+
+button.blue, .button.blue {
+	background-color: var(--primary-blue);
+}
+
+button.yellow, .button.yellow {
+	background-color: var(--primary-yellow);
+}
+
+/* =================== constants =================== */
+#main-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+#main-grid>.container {
+	grid-column: span 4;
+}
+
+#main-grid>.container:not(:first-child) {
+	padding: 2rem 1rem;
+}
+
+#main-grid>.container:not(:last-child) {
+	border-bottom: 4px solid var(--primary-blacK);
+}
+
+.container>h2 {
+	margin-bottom: 1rem;
+}

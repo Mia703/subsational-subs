@@ -1,126 +1,21 @@
-/* =================== imported fonts =================== */
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* =================== global variables =================== */
-:root {
-	--primary-pink: #FEBAED;
-	--primary-green: #AEA434;
-	--primary-blue: #76B3D0;
-	--primary-orange: #FF6C1F;
-	--primary-yellow: #FDB52A;
-	--primary-blacK: black;
-	--primary-white: white;
-	--primary-transition: 200ms ease-in;
-	--primary-button-transition: 100ms ease-in;
-}
-
-/* =================== reset default styles =================== */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* =================== base page styles =================== */
-body {
-	font-family: "Anybody", sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	background-color: var(--primary-white);
-	color: var(--primary-blacK);
-}
-
-/* =================== font styles =================== */
-h1 {
-	font-weight: 700;
-	font-size: 3em;
-}
-
-h2 {
-	font-size: 2em;
-	text-transform: uppercase;
-	font-weight: 500;
-}
-
-h3 {
-	font-weight: 500;
-	font-style: italic;
-	font-size: 1.5em;
-}
-
-p,
-li {
-	font-size: 1em;
-	line-height: 129%;
-	font-weight: 400;
-}
-
-img,
-video {
-	width: 100%;
-}
-
-.outline-text {
-	text-shadow: 4px 4px 0 var(--primary-blacK),
-		-4px 4px 0 var(--primary-blacK),
-		-4px -4px 0 var(--primary-blacK),
-		4px -4px 0 var(--primary-blacK);
-}
-
-button[type=button] {
-	padding: 8px 10px;
-	border-radius: 10000px;
-	border: 4px solid var(--primary-blacK);
-	font-family: "Anybody", sans-serif;
-	font-weight: 500;
-	font-size: 0.8em;
-	cursor: pointer;
-}
-
-button.pink {
-	background-color: var(--primary-pink);
-}
-
-button.yellow {
-	background-color: var(--primary-yellow);
-}
-
-/* =================== constants =================== */
-#main-grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-}
-
-#main-grid>.container {
-	grid-column: span 4;
-}
-
-#main-grid>.container:not(:first-child) {
-	padding: 2rem 1rem;
-}
-
-#main-grid>.container:not(:last-child) {
-	border-bottom: 4px solid var(--primary-blacK);
-}
-
-.container>h2 {
-	margin-bottom: 1rem;
-}
-
-.main-navigation.desktop {
-	display: none;
-}
+/* TODO: move menu styles to separate CSS file */
 
 /* ---------- header container ---------- */
 .header.container {
 	background-image: url('/assets/pexels-alex-green-5693056.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	width: 100%;
-	height: 50vh;
 	position: relative;
 	padding: 1rem;
 	text-align: right;
+	z-index: 1;
+}
+
+/* hide desktop navigation */
+.header.container>.main-navigation.desktop {
+	display: none;
 }
 
 .header.container>.overlay {
@@ -131,25 +26,27 @@ button.yellow {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: -1;
 }
 
-.header.container>.main-navigation.mobile button {
+.header.container>.navigation-button.mobile {
 	border: none;
 	background-color: transparent;
 	color: var(--primary-white);
 }
 
-.header.container>.main-navigation.mobile button span {
+.header.container>.navigation-button.mobile span {
 	font-weight: 600;
 	font-size: 2.5em;
 }
 
 .header.container>.header.content {
 	color: var(--primary-yellow);
+	padding: 1rem 0;
 }
 
 .header.container>.header.content .header {
-	margin: 1rem 0 2rem;
+	margin-bottom: 2rem;
 }
 
 /* ---------- about container ---------- */
@@ -179,6 +76,8 @@ button.yellow {
 	border: 4px solid var(--primary-blacK);
 	background-color: var(--primary-white);
 	cursor: pointer;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .menu-item.container>.image.container {
@@ -226,6 +125,7 @@ button.yellow {
 	height: 50vh;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -272,7 +172,7 @@ footer .links.container {
 
 	/* ---------- font size ---------- */
 	h1 {
-		font-size: 6em;
+		font-size: 4em;
 	}
 
 	h2 {
@@ -284,18 +184,21 @@ footer .links.container {
 	}
 
 	p,
-	li {
-		font-size: 2;
+	a {
+		font-size: 1.5em;
 	}
 
-	button[type=button] {
-		font-size: 1em;
+	button,
+	.button {
+		font-size: 1.5em;
 		transition: transform var(--primary-button-transition);
 	}
 
-	button[type=button]:hover {
+	button:hover,
+	.button:hover {
 		transform: rotate(2deg);
 	}
+
 	/* ---------- main grid ---------- */
 	#main-grid {
 		grid-template-columns: repeat(6, 1fr);
@@ -309,14 +212,27 @@ footer .links.container {
 		padding: 4rem 2rem;
 	}
 
+	/* ---------- header container ---------- */
+	.header.container>.navigation-button.mobile span {
+		font-weight: 600;
+		font-size: 2em;
+	}
+
+	.header.container>.header.content {
+		padding: 3rem 0;
+	}
+
+
 	/* ---------- menu container ---------- */
 	.menu-item.container {
 		grid-column: span 1;
 		transition: transform var(--primary-transition);
+		width: auto;
+		margin: 0 0;
 	}
 
 	.menu-item.container:hover {
-		transform: rotate(-4deg);
+		transform: rotate(-1.5deg);
 	}
 
 	.menu-item.container>.image.container {
@@ -335,7 +251,7 @@ footer .links.container {
 	/* ---------- action container ---------- */
 	.action.container {
 		position: relative;
-		height: 30vh;
+		height: 40vh;
 	}
 
 	/* ---------- footer container ---------- */
@@ -347,4 +263,98 @@ footer .links.container {
 /* =================== DESKTOP =================== */
 @media only screen and (min-width: 64.063em) {
 
+	/* ---------- font size ---------- */
+	h1 {
+		font-size: 5em;
+	}
+
+	/* ---------- main grid ---------- */
+	#main-grid {
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	#main-grid>.container {
+		grid-column: span 12;
+	}
+
+	/* ---------- header container ---------- */
+	/* hide mobile navigation */
+	.header.container>.navigation-button.mobile {
+		display: none;
+	}
+
+	/* display desktop navigation */
+	.header.container>.main-navigation.desktop {
+		display: block;
+		padding: 1.5rem;
+	}
+
+	.header.container>.main-navigation.desktop .nav-list {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	.header.container>.main-navigation.desktop .nav-list-item a {
+		color: var(--primary-white);
+		text-decoration: none;
+		font-style: italic;
+		font-weight: 700;
+		transition: 200ms ease-in;
+	}
+
+	.header.container>.main-navigation.desktop .nav-list-item a:hover {
+		color: var(--primary-pink);
+	}
+
+	/* ---------- header container ---------- */
+	.header.container>.header.content {
+		padding: 9em 0em;
+		float: right;
+	}
+
+	.header.container>.header.content h1 {
+		width: 20ch;
+	}
+
+	/* ---------- about container ---------- */
+	.about.container p {
+		padding: 2rem 2rem;
+	}
+
+	/* ---------- menu container ---------- */
+	.menu.container h2 {
+		margin-bottom: 2rem;
+	}
+
+	.menu-item.container>.image.container {
+		height: 40vh;
+		background-position: center;
+	}
+
+	/* arrow */
+	.menu-item.container>.text.container>.container>span {
+		font-weight: 600;
+		font-size: 3em;
+	}
+
+	.menu.container>button {
+		margin-top: 2rem;
+	}
+
+	/* ---------- location container ---------- */
+	#map {
+		height: 50vh;
+	}
+
+	/* ---------- action container ---------- */
+	.action.container {
+		height: 60vh;
+	}
+
+	.action.container>.text.container {
+		padding: 3rem;
+	}
 }
