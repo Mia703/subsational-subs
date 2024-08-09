@@ -4,148 +4,156 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Amya N Moore">
-	<meta name="description" content="Hand-crafted subs for flavour fanatics">
-	<!-- style and script tags -->
-	<link rel="stylesheet" href="styles/global.css">
-	<link rel="stylesheet" href="styles/index.css">
-	<script defer src="scripts/map.js"></script>
 	<!-- google icons -->
 	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<!-- leaflet.js -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
 		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<!-- styles -->
+	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="./styles/index.css">
+	<script defer src="./scripts/index.js"></script>
 	<title>SubSational Subs | Home</title>
 </head>
 
 <body>
 	<main id="main-grid">
 		<!-- =================== HEADER CONTAINER =================== -->
-		<div class="header container">
-			<!-- =================== MOBILE NAVIGATION =================== -->
-			<button type="button" class="navigation-button mobile">
-				<span class="material-symbols-rounded">
-					menu
-				</span>
-			</button>
-			<!-- =================== DESKTOP NAVIGATION =================== -->
-			<nav class="main-navigation desktop">
-				<ul class="nav-list">
-					<li class="nav-list-item"><a href="index.html">SubSational Subs</a></li>
-					<li class="nav-list-item"><a href="/">About</a></li>
-					<li class="nav-list-item"><a href="/">Contact</a></li>
+		<section class="header container">
+			<!-- =================== mobile navigation -->
+			<nav id="mobile">
+				<button type="button" id="mobile-nav-close">
+					<span class="material-symbols-outlined">close</span>
+				</button>
+				<div class="mobile-nav content">
+					<h1>SubSational Subs</h1>
+					<h3>Your summer sub destination.</h3>
+					<ul class="nav-list mobile">
+						<li class="nav-list-item mobile">
+							<a href="index.html" class="nav-link current">Home</a>
+						</li>
+						<li class="nav-list-item mobile">
+							<a href="index.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-list-item mobile">
+							<a href="index.html" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- =================== desktop navigation -->
+			<nav id="desktop">
+				<ul class="nav-list desktop">
+					<li class="nav-list-item desktop">
+						<a href="index.html" class="nav-link desktop">SubSational Subs</a>
+					</li>
+					<li class="nav-list-item desktop">
+						<a href="index.html" class="nav-link desktop">About</a>
+					</li>
+					<li class="nav-list-item desktop">
+						<a href="index.html" class="nav-link desktop">Contact</a>
+					</li>
 				</ul>
 			</nav>
-			<!-- =================== HEADER CONTENT =================== -->
+			<!-- =================== header content -->
 			<div class="header content">
+				<button type="button" id="mobile-nav-open">
+					<span class="material-symbols-outlined">menu</span>
+				</button>
 				<h1 class="header outline-text">Crafted for Flavour Fanatics</h1>
-				<button type="button" class="pink">Order Online btn</button>
-				<!-- FIXME: why doesn't this move on hover?! -->
-				<a href="/pages/login.html" class="button pink">Order Online Login</a>
+				<div class="rotate"><a href="index.html" class="button pink">Order Online Now!</a></div>
 			</div>
 			<div class="overlay"></div>
-		</div>
-		<!-- =================== ABOUT CONTAINER =================== -->
-		<div class="about container">
-			<p>
-				Our subs are more than just food; they're works of culinary art. Dive into our menu and explore a
-				symphony of tastes,
-				carefully crafted with premium ingredients and a passion for perfection. Whether you're craving the
-				robust flavours
-				of our [Name] or the refreshing crunch of our [Name] each bite is a journey in taste.
-			</p>
-		</div>
-		<!-- =================== MENU CONTAINER -->
-		<div class="menu container">
-			<h2>What's for lunch?</h2>
-			<div class="menu-item grid">
-				<div class="menu-item container">
-					<div class="image container"></div>
-					<div class="text container">
-						<div class="container">
-							<h3>Hot Subs</h3>
-							<p>Sub-text</p>
-						</div>
-						<div class="container">
-							<span class="material-symbols-rounded">
-								arrow_forward
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="menu-item container">
-					<div class="image container"></div>
-					<div class="text container">
-						<div class="container">
-							<h3>Cold Subs</h3>
-							<p>Sub-text</p>
-						</div>
-						<div class="container">
-							<span class="material-symbols-rounded">
-								arrow_forward
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="menu-item container">
-					<div class="image container"></div>
-					<div class="text container">
-						<div class="container">
-							<h3>Sides, Drinks, Desserts</h3>
-							<p>Sub-text</p>
-						</div>
-						<div class="container">
-							<span class="material-symbols-rounded">
-								arrow_forward
-							</span>
-						</div>
-					</div>
-				</div>
+		</section>
+		<section class="about container">
+			<div class="about content">
+				<p>
+					Our subs are more than just food; they're works of culinary art. Dive into our menu and explore a
+					symphony of tastes,
+					carefully crafted with premium ingredients and a passion for perfection. Whether you're craving the
+					robust flavours
+					of our classic grilled cheese or the refreshing crunch of our BLT each bite is a journey in taste.
+				</p>
 			</div>
-			<button type="button" class="yellow">Explore the Menu</button>
-		</div>
-		<!-- =================== LOCATION CONTAINER =================== -->
-		<div class="location container">
-			<h2>Come find us</h2>
-			<div id="map" class="maps container"></div>
-		</div>
-		<!-- =================== ACTION CONTAINER =================== -->
-		<div class="action container">
-			<div class="text container">
-				<h2>Order online today and get 15% off</h2>
-				<button type="button" class="yellow">Order Online</button>
+		</section>
+		<section class="menu container">
+			<div class="menu content">
+				<h2>What's for Lunch?</h2>
+
+				<div class="menu-item container">
+					<div class="item rotate">
+						<div class="image container"></div>
+						<div class="content">
+							<h3>Hot Subs</h3>
+							<p>Hot subs grilled and ready to eat.</p>
+						</div>
+					</div>
+					<div class="item rotate">
+						<div class="image container"></div>
+						<div class="content">
+							<h3>Cold Subs</h3>
+							<p>Cold sandwiches prepared with fresh ingredients daily.</p>
+						</div>
+					</div>
+					<div class="item rotate">
+						<div class="image container"></div>
+						<div class="content">
+							<h3>Drinks, Sides, and Desserts</h3>
+							<p>Perfect complements to a well-mad sandwich.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="rotate button"><a href="index.html" class="button yellow">Explore the Menu</a></div>
+			</div>
+		</section>
+		<section class="location container">
+			<div class="location content">
+				<h2>Come Find Us</h2>
+				<div id="map" class="map container"></div>
+			</div>
+		</section>
+		<section class="action container">
+			<div class="action content">
+				<h3>Order online today to get 15% off</h3>
+				<div class="rotate">
+					<a href="index.html" class="button pink">Order Online</a>
+				</div>
 			</div>
 			<div class="video container">
-				<video src="/assets/pexels-cheesey-burger-close-up-view.mp4" loop muted autoplay
+				<video src="./assets/pexels-cheesey-burger-close-up-view.mp4" loop muted autoplay
 					aria-label="Hamburger rotating close up"></video>
 			</div>
-		</div>
-		<!-- =================== FOOTER =================== -->
-		<footer class="footer container">
-			<h1 class="logo">SubSational</h1>
-			<div class="footer links container">
-				<div class="container">
-					<p>About Us</p>
-					<p>Contact Us</p>
-					<p>Locations</p>
-					<p>Order Online</p>
-					<p>Terms + Conditions</p>
-					<p>Privacy Policy</p>
-				</div>
-				<div class="container">
-					<p>Gift Cards</p>
-					<p>Merchandise</p>
-					<p>Catering</p>
-					<p>Mobile App</p>
-				</div>
-				<div class="container">
-					<p>Instagram</p>
-					<p>TikTok</p>
-					<p>Facebook</p>
-					<p>LinkedIn</p>
+		</section>
+		<footer id="footer" class="section">
+			<div class="footer content">
+				
+				<h1 id="logo">SubSational</h1>
+
+				<div class="footer-links container">
+					<div class="container">
+						<p>About Us</p>
+						<p>Contact Us</p>
+						<p>Locations</p>
+						<p>Order Online</p>
+						<p>Terms + Conditions</p>
+						<p>Privacy Policy</p>
+					</div>
+					<div class="container">
+						<p>Gift Cards</p>
+						<p>Merchandise</p>
+						<p>Catering</p>
+						<p>Mobile App</p>
+					</div>
+					<div class="container">
+						<p>Instagram</p>
+						<p>TikTok</p>
+						<p>Facebook</p>
+						<p>LinkedIn</p>
+					</div>
 				</div>
 			</div>
 		</footer>

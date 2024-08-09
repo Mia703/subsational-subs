@@ -1,360 +1,274 @@
-/* TODO: move menu styles to separate CSS file */
-
-/* ---------- header container ---------- */
-.header.container {
-	background-image: url('/assets/pexels-alex-green-5693056.jpg');
-	background-repeat: no-repeat;
+/* =================== header section =================== */
+section.header {
+	text-align: right;
+	background-image: url('../assets/pexels-alex-green-5693056.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	width: 100%;
 	position: relative;
-	padding: 1rem;
-	text-align: right;
-	z-index: 1;
 }
 
-/* hide desktop navigation */
-.header.container>.main-navigation.desktop {
-	display: none;
+section.header>.header.content {
+	position: relative;
+	z-index: 2;
+	color: var(--primary-yellow);
+	margin-bottom: 1rem;
 }
 
-.header.container>.overlay {
-	background-color: #6A6206;
+section.header>.header.content>h1 {
+	margin-bottom: 1rem;
+}
+
+section.header>.overlay {
+	background-color: var(--primary-overlay-green);
 	width: 100%;
 	height: 100%;
 	mix-blend-mode: overlay;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 1;
 }
 
-.header.container>.navigation-button.mobile {
-	border: none;
-	background-color: transparent;
-	color: var(--primary-white);
-}
-
-.header.container>.navigation-button.mobile span {
-	font-weight: 600;
-	font-size: 2.5em;
-}
-
-.header.container>.header.content {
-	color: var(--primary-yellow);
-	padding: 1rem 0;
-}
-
-.header.container>.header.content .header {
-	margin-bottom: 2rem;
-}
-
-/* ---------- about container ---------- */
-.about.container {
+/* =================== about section =================== */
+section.about {
 	text-align: center;
-}
-
-/* ---------- menu container ---------- */
-.menu.container {
-	background-color: var(--primary-pink);
-}
-
-.menu.container h2 {
-	text-align: center;
-}
-
-.menu-item.grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 15px;
-	margin: 1rem 0;
-}
-
-/* menu item container */
-.menu-item.container {
-	grid-column: span 3;
-	border: 4px solid var(--primary-blacK);
 	background-color: var(--primary-white);
-	cursor: pointer;
-	width: 70vw;
-	margin: 0 auto;
 }
 
-.menu-item.container>.image.container {
-	height: 40vh;
-	background-image: url('/assets/pexels-polina-tankilevitch-5419221.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.menu-item.container:nth-child(2)>.image.container {
-	background-image: url("/assets/pexels-geraud-pfeiffer-6608664.jpg");
-}
-
-.menu-item.container:nth-child(3)>.image.container {
-	background-image: url('/assets/pexels-karolina-grabowska-4389641.jpg');
-}
-
-.menu-item.container>.text.container {
-	border-top: 4px solid var(--primary-blacK);
-	padding: 1rem 0.5rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.menu-item.container>.text.container h3 {
-	margin-bottom: 0.5rem;
-}
-
-.menu-item.container>.text.container>.container>span {
-	font-weight: 600;
-}
-
-/* ---------- location container ---------- */
-#map {
-	height: 30vh;
-	border: 4px solid var(--primary-blacK);
-}
-
-/* ---------- action container ---------- */
-.action.container {
-	position: relative;
-	height: 50vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.action.container>.text.container {
-	--primary-green: rgba(174, 164, 52, 75%);
-	background-color: var(--primary-green);
-	border: 4px solid var(--primary-blacK);
+section.about>.about.content {
 	padding: 1rem;
 }
 
-.action.container>.video.container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
+/* =================== menu container =================== */
+section.menu {
+	background-color: var(--primary-pink);
+	text-align: center;
+}
+
+section.menu>.menu.content>h2 {
+	margin-bottom: 1rem;
+}
+
+section.menu>.menu.content>.menu-item.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.menu-item.container>.item {
+	grid-column: span 3;
+	border: var(--primary-border);
+	/* remove rotation margin */
+	margin: 0;
 	overflow: hidden;
 }
 
-.action.container>.video.container video {
-	height: 100%;
-	object-fit: cover;
+.menu-item.container>.item>.image.container {
+	height: 30vh;
+	background-color: lightgrey;
+	border-bottom: var(--primary-border);
 }
 
-/* ---------- footer container ---------- */
+.menu-item.container>.item:first-child>.image.container {
+	background-color: var(--primary-white);
+	background-image: url('../assets/pexels-polina-tankilevitch-5419221.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.menu-item.container>.item:nth-child(2)>.image.container {
+	background-color: var(--primary-white);
+	background-image: url('../assets/pexels-geraud-pfeiffer-6608664.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.menu-item.container>.item:last-child>.image.container {
+	background-color: var(--primary-white);
+	background-image: url('../assets/pexels-karolina-grabowska-4389641.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.menu-item.container>.item>.content {
+	background-color: var(--primary-white);
+	padding: 1rem;
+	height: 100%;
+}
+
+section.menu>.menu.content>.rotate.button {
+	float: right;
+	margin-top: 2rem;
+}
+
+/* =================== location section =================== */
+section.location>.location.content h2 {
+	margin-bottom: 1rem;
+}
+
+#map {
+	height: 30vh;
+	background-color: lightgrey;
+	border: var(--primary-border);
+}
+
+/* =================== action section =================== */
+#main-grid>section.action {
+	padding: 0;
+}
+
+section.action {
+	position: relative;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section.action>.action.content {
+	--primary-overlay-green: #6a6206c4;
+	background-color: var(--primary-overlay-green);
+	border: var(--primary-border);
+	margin: 1rem;
+	padding: 1rem;
+}
+
+section.action>.action.content>.rotate {
+	margin-top: 2rem;
+	float: right;
+}
+
+section.action>.video.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+section.action>.video.container>video {
+	object-fit: cover;
+	height: 100%;
+}
+
+/* =================== footer section =================== */
 footer {
 	background-color: var(--primary-blue);
 }
 
-footer .logo {
-	margin-bottom: 1rem;
+#main-grid>.section:last-child {
+	padding-bottom: 3rem;
 }
 
-footer .links.container {
+footer>.footer.content>.footer-links.container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
 }
 
-/* =================== media queries =================== */
+footer .footer-links.container>.container {
+	grid-column: span 1;
+}
+
+footer>.footer.content>#logo {
+	font-weight: 500;
+	font-size: 3.5em;
+	margin-bottom: 1rem;
+}
 
 /* =================== TABLET =================== */
 @media only screen and (min-width: 40.063em) {
 
-	/* ---------- font size ---------- */
-	h1 {
-		font-size: 4em;
-	}
-
-	h2 {
-		font-size: 3em;
-	}
-
-	h3 {
-		font-size: 2em;
-	}
-
-	p,
-	a {
-		font-size: 1.5em;
-	}
-
-	button,
-	.button {
-		font-size: 1.5em;
-		transition: transform var(--primary-button-transition);
-	}
-
-	button:hover,
-	.button:hover {
-		transform: rotate(2deg);
-	}
-
-	/* ---------- main grid ---------- */
-	#main-grid {
-		grid-template-columns: repeat(6, 1fr);
-	}
-
-	#main-grid>.container {
-		grid-column: span 6;
-	}
-
-	#main-grid>.container:not(:first-child) {
-		padding: 4rem 2rem;
-	}
-
 	/* ---------- header container ---------- */
-	.header.container>.navigation-button.mobile span {
-		font-weight: 600;
-		font-size: 2em;
+	section.header {
+		height: 35vh;
 	}
 
-	.header.container>.header.content {
-		padding: 3rem 0;
-	}
-
+	/* ---------- about container ---------- */
 
 	/* ---------- menu container ---------- */
-	.menu-item.container {
+	.menu-item.container>.item {
 		grid-column: span 1;
-		transition: transform var(--primary-transition);
-		width: auto;
-		margin: 0 0;
 	}
 
-	.menu-item.container:hover {
-		transform: rotate(-1.5deg);
-	}
-
-	.menu-item.container>.image.container {
+	.menu-item.container>.item>.image.container {
 		height: 20vh;
-	}
-
-	.menu.container>button {
-		float: right;
 	}
 
 	/* ---------- location container ---------- */
 	#map {
-		height: 30vh;
+		height: 35vh;
 	}
 
 	/* ---------- action container ---------- */
-	.action.container {
-		position: relative;
-		height: 40vh;
+	section.action {
+		height: 45vh;
+	}
+
+	section.action>.action.content {
+		margin: 1rem 3rem;
 	}
 
 	/* ---------- footer container ---------- */
-	#main-grid>.footer.container {
-		padding-bottom: 3rem;
+	footer>.footer.content>* {
+		grid-column: span 1;
 	}
 }
 
 /* =================== DESKTOP =================== */
 @media only screen and (min-width: 64.063em) {
 
-	/* ---------- font size ---------- */
-	h1 {
-		font-size: 5em;
-	}
-
-	/* ---------- main grid ---------- */
-	#main-grid {
-		grid-template-columns: repeat(12, 1fr);
-	}
-
-	#main-grid>.container {
-		grid-column: span 12;
-	}
-
 	/* ---------- header container ---------- */
-	/* hide mobile navigation */
-	.header.container>.navigation-button.mobile {
-		display: none;
-	}
-
-	/* display desktop navigation */
-	.header.container>.main-navigation.desktop {
-		display: block;
-		padding: 1.5rem;
-	}
-
-	.header.container>.main-navigation.desktop .nav-list {
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: baseline;
-	}
-
-	.header.container>.main-navigation.desktop .nav-list-item a {
-		color: var(--primary-white);
-		text-decoration: none;
-		font-style: italic;
-		font-weight: 700;
-		transition: 200ms ease-in;
-	}
-
-	.header.container>.main-navigation.desktop .nav-list-item a:hover {
-		color: var(--primary-pink);
-	}
-
-	/* ---------- header container ---------- */
-	.header.container>.header.content {
-		padding: 9em 0em;
-		float: right;
-	}
-
-	.header.container>.header.content h1 {
-		width: 20ch;
+	section.header {
+		height: 75vh;
 	}
 
 	/* ---------- about container ---------- */
-	.about.container p {
-		padding: 2rem 2rem;
-	}
-
 	/* ---------- menu container ---------- */
-	.menu.container h2 {
-		margin-bottom: 2rem;
-	}
-
-	.menu-item.container>.image.container {
+	.menu-item.container>.item>.image.container {
 		height: 40vh;
-		background-position: center;
-	}
-
-	/* arrow */
-	.menu-item.container>.text.container>.container>span {
-		font-weight: 600;
-		font-size: 3em;
-	}
-
-	.menu.container>button {
-		margin-top: 2rem;
 	}
 
 	/* ---------- location container ---------- */
+	#main-grid>section.location {
+		padding: 2rem 5rem;
+	}
+
 	#map {
 		height: 50vh;
+		font-size: 0.5em;
 	}
 
 	/* ---------- action container ---------- */
-	.action.container {
+	section.action {
 		height: 60vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	.action.container>.text.container {
-		padding: 3rem;
+	section.action>.action.content {
+		margin: 1rem;
+		padding: 4rem 15rem;
+		text-align: center;
 	}
+
+	/* ---------- footer container ---------- */
+	footer>.footer.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	footer>.footer.content>#logo {
+		font-size: 7em;
+	}
+
 }

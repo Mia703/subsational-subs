@@ -4,12 +4,12 @@
 
 ### Home Page
 
-- ~The home page implements a carousel or Jumbotron image.~
+- Done: ~The home page implements a carousel or Jumbotron image.~
 
-### About Page
+### About Page - located on the Home Page
 
-- ~The about page must contain the restaurant's contact information, including the address and hours of operation.~
-- ~Use the Leaflet.js library to display a map-view of the restaurant's coordinates.~
+- Done: ~The about page must contain the restaurant's contact information, including the address and hours of operation.~
+- Done: ~Use the Leaflet.js library to display a map-view of the restaurant's coordinates.~
 
 ### Login Form
 
