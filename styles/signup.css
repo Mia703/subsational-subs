@@ -1,0 +1,99 @@
+/* ---------- sub-header ---------- */
+
+/* ---------- mobile navigation ---------- */
+#mobile-nav-open {
+	/* color: var(--primary-black); */
+	margin-bottom: 0;
+}
+
+/* =================== header container =================== */
+section.header {
+	text-align: right;
+}
+
+/* =================== form container =================== */
+section.header {
+	background-image: url('../assets/pexels-gropiuslab-5634630.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+section.header>.header.content {
+	position: relative;
+	z-index: 2;
+}
+
+.header.content>.form.container {
+	background-color: var(--primary-yellow);
+	padding: 1rem;
+	border: var(--primary-border);
+	text-align: center;
+	margin-top: 8rem;
+}
+
+.form.container>h2 {
+	margin-bottom: 2rem;
+}
+
+.form.container>form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.form.container>form input {
+	border: 2px solid var(--primary-black);
+	padding: 10px;
+	margin-bottom: 1rem;
+}
+
+.form.container>form input::placeholder {
+	text-transform: capitalize;
+}
+
+.form.container>.container {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.form.container>.container p {
+	margin-right: 5px;
+}
+
+.form.container>.container a {
+	color: var(--primary-black);
+	text-decoration: underline;
+}
+
+section.header>.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	--primary-pink: #febaed71;
+	background-color: var(--primary-pink);
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+}
+
+/* =================== media queries =================== */
+
+/* =================== TABLET =================== */
+@media only screen and (min-width: 40.063em) {
+	.header.content>.form.container {
+		margin: 15rem 8rem 0rem;
+	}
+}
+
+/* =================== DESKTOP =================== */
+@media only screen and (min-width: 64.063em) {
+
+	.header.content>.form.container {
+		margin: 5rem 20rem 0rem;
+	}
+}

@@ -1,5 +1,5 @@
 /* =================== imported fonts =================== */
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Archivo+Black&display=swap');
 
 /* =================== global variables =================== */
 :root {
@@ -52,7 +52,8 @@ h3 {
 }
 
 p,
-a {
+a,
+input {
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 129%;
@@ -68,9 +69,10 @@ video {
 }
 
 .outline-text {
-	/* TODO: change font to larger typeface */
-	font-family: Arial, sans-serif;
-	-webkit-text-stroke: 2px var(--primary-black);
+	font-family: "Archivo Black", sans-serif;
+	font-weight: 500;
+	-webkit-text-stroke: 2.5px var(--primary-black);
+	line-height: 100%;
 }
 
 a.button,
@@ -81,7 +83,7 @@ button {
 	font-family: 'Anybody', sans-serif;
 	font-weight: 600;
 	color: var(--primary-black);
-	font-size: 0.8em;
+	font-size: 1em;
 	cursor: pointer;
 	font-style: italic;
 }
@@ -106,9 +108,14 @@ button.yellow {
 	background-color: var(--primary-yellow);
 }
 
-a.button,
+a.button.white,
 button.white {
 	background-color: var(--primary-white);
+}
+
+a.button.orange,
+button.orange {
+	background-color: var(--primary-orange);
 }
 
 .rotate {
@@ -137,11 +144,6 @@ button.white {
 #main-grid>section:not(:first-child),
 #main-grid>.section:not(:first-child) {
 	padding: 2rem 1rem;
-}
-
-#main-grid>section:not(:last-child),
-#main-grid>.section:not(:last-child) {
-	border-bottom: 4px solid var(--primary-black);
 }
 
 /* =================== mobile navigation =================== */
@@ -218,13 +220,34 @@ nav#mobile .current {
 	font-style: italic;
 }
 
+/* =================== tablet styles =================== */
+@media only screen and (min-width: 40.063em) {
+	#main-grid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 0px;
+	}
 
-/* =================== desktop navigation =================== */
+	#main-grid>section,
+	#main-grid>.section {
+		grid-column: span 6;
+	}
+}
 
-
-/* =================== media queries =================== */
-/* =================== DESKTOP =================== */
+/* =================== desktop styles =================== */
 @media only screen and (min-width: 64.063em) {
+	#main-grid {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 0px;
+	}
+
+	#main-grid>section,
+	#main-grid>.section {
+		grid-column: span 12;
+	}
+
+	/* ---------- font styles ---------- */
 	h1 {
 		font-size: 3em;
 	}
@@ -238,10 +261,25 @@ nav#mobile .current {
 	}
 
 	p,
-	a {
+	a,
+	input {
 		font-size: 1.5em;
 	}
 
+	a.button,
+	button {
+		padding: 10px 15px;
+		border-radius: 1000000px;
+		border: var(--primary-border);
+		font-family: 'Anybody', sans-serif;
+		font-weight: 600;
+		color: var(--primary-black);
+		font-size: 1.5em;
+		cursor: pointer;
+		font-style: italic;
+	}
+
+	/* ---------- desktop navigation ---------- */
 	/* hide desktop navigation */
 	nav#desktop {
 		display: block;

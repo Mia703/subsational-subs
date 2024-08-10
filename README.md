@@ -13,10 +13,10 @@
 
 ### Login Form
 
-- Must contain a Login form containing the following fields: username and password.
-  - The form makes an Ajax POST request to "https://ict4510.herokuapp.com/api/login".
-  - A successful 200 HTTP response should be returned with the user object containing your username, first_name, last_name, api_key, and session token.
-  - This object is saved in sessionStorage and the user is directed towards the main page.
+- Done: ~Must contain a Login form containing the following fields: username and password.~
+  - Done: ~The form makes an Ajax POST request to "https://ict4510.herokuapp.com/api/login".~
+  - Done: ~A successful 200 HTTP response should be returned with the user object containing your username, first_name, last_name, api_key, and session token.~
+  - In-Progress: This object is saved in sessionStorage and the user is directed towards the main page.
 - Upon log out, the user object is removed from sessionStorage and the user is directed back to the login form.
 
 ### Food Menu Page
@@ -66,3 +66,5 @@ https://www.w3schools.com/js/js_json_stringify.asp
 https://www.w3schools.com/jsref/prop_win_sessionstorage.asp
 
 https://jsoneditoronline.org/indepth/data-fetching/post-json/
+
+https://www.pexels.com/photo/a-close-up-shot-of-a-sandwich-with-bacon-and-cheese-5634630/
