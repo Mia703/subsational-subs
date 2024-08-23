@@ -1,0 +1,44 @@
+product_id,product_name,product_desc,product_price,product_image,product_type
+1,Ham and Provolone,Provolone and ham,8.35,provolone-and-ham.png,cold
+2,The Veggie,"Swiss, provolone, and green bell peppers",8.35,swiss-provolone-green-bell-peppers.png,cold
+3,The Super Sub,"Provolone, ham, prosciuttini and cappacuolo",9.35,provolone-ham-prosciuttini-and-cappacuolo.png,cold
+4,Turkey and Provolone,Provolone and Turkey,9.35,provolone-and-turkey.png,cold
+5,Tuna Fish,Tuna with lettuce and tomato,9.35,freshly-made-on-premises.png,cold
+6,The Original Italian,"Provolone, ham, prosciuttini, cappacuolo, salami, and pepperoni",10.35,provolone-ham-prosciuttini-cappacuolo-salami-and-pepperoni.png,cold
+7,Club Sub,"Turkey, ham, provolone, applewood smoked bacon, and mayo",10.35,turkey-ham-provolone-applewood-smoked-bacon-mayo.png,cold
+8,Club Supreme,"Roast beef, turkey, swiss, applewood smoked bacon, and mayo",10.55,roast-beef-turkey-swiss-applewood-smoked-bacon-and-mayo.png,cold
+9,BLT,"Bacon, lettuce, tomato, and mayo",9.35,bacon-lettuce-and-tomato.png,cold
+10,The Number Four,"Provolone, prosciuttini, and cappacuolo",9.35,provolone-prosciuttini-and-cappacuolo.png,cold
+11,Stickball Special,"Provolone, ham, and salami",8.35,provolone-ham-and-salami.png,cold
+12,Cancro Special,"All natural oven-roasted top rounds and provolone, with a layer of pepperoni",10.75,all-natural-oven-roasted-top-rounds-and-provolone-perfectly-comp.png,cold
+13,All Time Favourite,"Provolone, ham, and cappacuolo",8.35,provolone-ham-and-cappacuolo.png,cold
+
+14,Smoky Southwestern Cheese Steak,"Grilled onions, peppers, white American cheese, and Smoky Southwest Sauce",9.95,grilled-onions-peppers-white-american-cheese-and-smoky-southwestern.png,hot
+15,Salsa Verde Chicken Cheese Steak,"Grilled onions, peppers, white American cheese, and Salsa Verde sauce",9.75,grilled-onions-peppers-white-american-cheese-and-salsa-verde-sauce.png,hot
+16,Chicken Philly,"Grilled onions, peppers, and white American cheese",9.35,grilled-onions-peppers-white-american-cheese.png,hot
+17,Big Kahuna Chicken Cheese Steak,"Grilled onions, peppers, mushrooms, jalapeños, and extra white American cheese",9.85,grilled-onions-peppers-mushrooms-jalapenos-extra-white-american.png,hot
+18,Bacon Ranch Chicken Cheese Steak,"Applewood smoked bacon, lettuce, tomato, white American cheese, and ranch dressing",9.85,applewood-smoked-bacon-lettuce-tomato-white-american-cheese.png,hot
+19,California Chicken Cheese Steak,"Lettuce, tomato, mayo, and white American cheese",9.55,lettuce-tomato-mayo-and-white-american-cheese.png,hot
+20,Buffalo Chicken Cheese Steak,"Frank's Red Hot Sauce, lettuce, tomato, and white American cheese with blue cheese dressing",9.85,franks-red-hot-sauce-lettuce-tomato-white-american-cheese.png,hot
+21,Famous Steak Philly,"Grilled onions, peppers, and white American cheese",9.65,grilled-onions-peppers-white-american-cheese-steak.png,hot
+22,Chipotle Steak Cheese Steak,"Grilled onions, peppers, white American cheese, and chipotle mayo",9.85,grilled-onions-peppers-white-american-cheese-and-chipotle-mayo-steak.png,hot
+23,Big Kahuna Steak Cheese Steak,"Grilled onions, peppers, mushrooms, jalapeños, and extra white American cheese",10.05,grilled-onions-peppers-mushrooms-jalapenos-extra-white-american-steak.png,hot
+24,Grilled Portabella Mushroom and Swiss,"Portabella mushrooms, green bell peppers, onions, and swiss cheese",9.45,fresh-portabella-mushrooms-green-bell-peppers-onions.png,hot
+25,Portabella Cheese Steak,"Portabella mushrooms, peppers, onions, and white American cheese",10.25,portabella-mushrooms-peppers-onions-and-white-american.png,hot
+26,Portabella Chicken Cheese Steak,"Chicken, portabella mushrooms, peppers, onions, and white American cheese",10.05,portabella-mushrooms-peppers-onions-and-white-american-chicken.png,hot
+
+27,Bottled Soda and Chips,20oz bottled drink and chips,4.39,chips-and-soda.png,side
+28,Bottled Water and Chips,20ox bottled water and chips,4.19,chips-and-water.png,side
+29,Pureleaf Tea and Chips,,4.39,chips-and-tea.png,side
+30,Regular Drink and Chips,22oz fountain drink and chips,4.09,chips-and-cup-reg.png,side
+31,Giant Drink and Chips,32oz fountain drink and chips,4.29,chips-and-cup-large.png,side
+32,Chips,"Doritos Cool Ranch, Doritos Nacho, Lays Classic, Miss Vickie's Jalapeño, or Miss Vickie's Sea Salt",1.95,chips.png,side
+33,Fountain Drink,"Your favourite Pepsi products, self-served in-store",2.75,cup.png,side
+34,Bottled Water,20ox Aquafina bottled water,2.65,aquafina.png,side
+35,Soda,"20oz bottled Pepsi, Pepsi Zero Sugar, Pepsi Wild Cherry, or Mountain Dew",3.09,bottled-soda.png,side
+36,Celsius,"12oz Celsius Sparking Orange, Tropical Vibe, or Peach Vibe",3.59,celsius.png,side
+37,Pureleaf Tea,18.5oz Pureleaf Tea,3.09,pureleaf-tea.png,side
+38,Cookie,Fresh-baked and delicious,1.35,cookie.png,side
+39,Snickerdoodle (GF),Gluten-free Snickerdoodle cookie,2.85,cookie-snickerdoodle.png,side
+40,Brownie,Gooey chocolate chip brownie,2.75,chocolate-chip-brownie.png,side
+41,Bubly,16oz Bubly Sparkling Water,2.89,bubly.png,side

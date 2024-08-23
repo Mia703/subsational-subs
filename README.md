@@ -16,14 +16,14 @@
 - Done: ~Must contain a Login form containing the following fields: username and password.~
   - Done: ~The form makes an Ajax POST request to "https://ict4510.herokuapp.com/api/login".~
   - Done: ~A successful 200 HTTP response should be returned with the user object containing your username, first_name, last_name, api_key, and session token.~
-  - In-Progress: This object is saved in sessionStorage and the user is directed towards the main page.
+  - Done: ~In-Progress: This object is saved in sessionStorage and the user is directed towards the main page.~
 - Upon log out, the user object is removed from sessionStorage and the user is directed back to the login form.
 
 ### Food Menu Page
 
-- A display of your menu items.
-- The menu/ordering page is only rendered after a user has been successfully logged in.
-- Each menu item must container the item name, its description and price.
+- Done: ~A display of your menu items.~
+- Done: ~The menu/ordering page is only rendered after a user has been successfully logged in.~
+- Done: ~Each menu item must container the item name, its description and price.~
 - The Ordering form will make an Ajax POST request to "https://ict4510.herokuapp.com/api/menus?api_key=<your-api-key>".
 	- The request must container the session token in the request header.
 	- A successful 200 (or 201?) request should be returned.
