@@ -1,0 +1,64 @@
+/* =================== button styles =================== */
+
+/* =================== MOBILE =================== */
+a.button,
+button {
+	padding: 10px 15px;
+	border-radius: 1000000px;
+	border: var(--primary-border);
+	font-family: 'Anybody', sans-serif;
+	font-weight: 600;
+	color: var(--primary-black);
+	font-size: 1em;
+	cursor: pointer;
+	font-style: italic;
+}
+
+a.button.pink,
+button.pink {
+	background-color: var(--primary-pink);
+}
+
+a.button.blue,
+button.blue {
+	background-color: var(--primary-blue);
+}
+
+a.button.green,
+button.green {
+	background-color: var(--primary-green);
+}
+
+a.button.yellow,
+button.yellow {
+	background-color: var(--primary-yellow);
+}
+
+a.button.white,
+button.white {
+	background-color: var(--primary-white);
+}
+
+a.button.orange,
+button.orange {
+	background-color: var(--primary-orange);
+}
+
+/* =================== TABLET =================== */
+
+/* =================== DESKTOP =================== */
+@media only screen and (min-width: 64.063em) {
+
+	a.button,
+	button {
+		padding: 10px 15px;
+		border-radius: 1000000px;
+		border: var(--primary-border);
+		font-family: 'Anybody', sans-serif;
+		font-weight: 600;
+		color: var(--primary-black);
+		font-size: 1.5em;
+		cursor: pointer;
+		font-style: italic;
+	}
+}

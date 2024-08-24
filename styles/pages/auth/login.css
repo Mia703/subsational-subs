@@ -1,8 +1,5 @@
-/* ---------- sub-header ---------- */
-
 /* ---------- mobile navigation ---------- */
 #mobile-nav-open {
-	/* color: var(--primary-black); */
 	margin-bottom: 0;
 }
 
@@ -13,7 +10,7 @@ section.header {
 
 /* =================== form container =================== */
 section.header {
-	background-image: url('../assets/pexels-gropiuslab-5634630.jpg');
+	background-image: url('../../../assets/victoria-aleksandrova-kwjji93XQlA-unsplash.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -26,7 +23,7 @@ section.header>.header.content {
 }
 
 .header.content>.form.container {
-	background-color: var(--primary-yellow);
+	background-color: var(--primary-green);
 	padding: 1rem;
 	border: var(--primary-border);
 	text-align: center;
@@ -74,8 +71,8 @@ section.header>.overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
-	--primary-pink: #68280657;
-	background-color: var(--primary-pink);
+	--primary-orange: #68280657;
+	background-color: var(--primary-orange);
 	width: 100vw;
 	height: 100vh;
 	z-index: 1;
@@ -94,6 +91,6 @@ section.header>.overlay {
 @media only screen and (min-width: 64.063em) {
 
 	.header.content>.form.container {
-		margin: 5rem 20rem 0rem;
+		margin: 8rem 20rem 0rem;
 	}
 }

@@ -1,0 +1,60 @@
+/* =================== DESKTOP =================== */
+@media only screen and (min-width: 64.063em) {
+
+	/* ---------- header ---------- */
+	section.header {
+		height: 75vh;
+	}
+
+	section.header>.header.content {
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	section.header>.header.content h1 {
+		margin-top: 3rem;
+		font-size: 6em;
+	}
+
+	/* ---------- about ---------- */
+
+	/* ---------- menu ---------- */
+	.menu-item.container>.item {
+		width: 25vw;
+	}
+
+	.menu-item.container>.item>.image.container {
+		height: 40vh;
+	}
+
+	/* ---------- location ---------- */
+	#main-grid>section.location {
+		padding: 2rem 5rem;
+	}
+
+	#map {
+		height: 50vh;
+		font-size: 0.5em;
+	}
+
+	/* ---------- action ---------- */
+	section.action {
+		display: none;
+	}
+
+	/* ---------- footer ---------- */
+	footer>.footer.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	footer>.footer.content>#logo {
+		font-size: 7em;
+	}
+
+}

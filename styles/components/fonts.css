@@ -1,0 +1,89 @@
+/* =================== imported fonts =================== */
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Archivo+Black&display=swap');
+
+/* =================== global variables =================== */
+:root {
+	--default-font: "Anybody", sans-serif;
+	--default-font-weight: 400;
+	--default-font-size: 1em;
+}
+
+/* =================== font styles =================== */
+
+/* =================== MOBILE =================== */
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 500;
+	font-size: italic;
+}
+
+p,
+a,
+input, span.material-symbols-outlined {
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 129%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* google icons */
+a:has(span) {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: var(--primary-black);
+}
+
+a > span {
+	margin-left: 5px;
+}
+
+img,
+video {
+	width: 100%;
+}
+
+.outline-text {
+	font-family: "Archivo Black", sans-serif;
+	font-weight: 500;
+	-webkit-text-stroke: 2.5px var(--primary-black);
+	line-height: 100%;
+}
+
+/* =================== TABLET =================== */
+
+/* =================== DESKTOP =================== */
+@media only screen and (min-width: 64.063em) {
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2.5em;
+	}
+
+	h3 {
+		font-size: 1.8em;
+	}
+
+	p,
+	a,
+	input {
+		font-size: 1.5em;
+	}
+}

@@ -30,9 +30,9 @@ async function postData(event) {
 
 			signupForm.reset();
 
-			window.location.href = "../pages/menu.html";
+			window.location.href = "./menu.html";
 		} else {
-			alert("Sorry, you\'re sign up was unsuccessful. Please try again.");
+			alert("Sorry, you're sign up was unsuccessful. Please try again.");
 			signupForm.reset();
 		}
 	} catch (e) {

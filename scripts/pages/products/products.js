@@ -1,4 +1,4 @@
-const imagePath = "../assets/product_images/";
+const imagePath = "../../assets/product_images/";
 
 const hotSubs = [
 	{
@@ -329,8 +329,7 @@ hotSubs.forEach((item) => {
 				</div>
 					<p class="name">${item.name}</p>
 					<p class="description">${item.description}.</p>
-					<p class="price">$${item.price}</p>
-					<button type="button" class="cart button white">Add to Cart</button>
+					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${item.price}</span></button>
 		</div>
 	`;
 });
@@ -345,8 +344,7 @@ coldSubs.forEach((item) => {
 				</div>
 					<p class="name">${item.name}</p>
 					<p class="description">${item.description}.</p>
-					<p class="price">$${item.price}</p>
-					<button type="button" class="cart button">Add to Cart</button>
+					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${item.price}</span></button>
 		</div>
 	`;
 });
@@ -361,12 +359,10 @@ sides.forEach((item) => {
 				</div>
 					<p class="name">${item.name}</p>
 					<p class="description">${item.description}.</p>
-					<p class="price">$${item.price}</p>
-					<button type="button" class="cart button">Add to Cart</button>
+					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${item.price}</span></button>
 		</div>
 	`;
 });
 sidesContainer.innerHTML = sidesParagraph;
-
 
 // how do display lists: https://techstacker.com/display-javascript-objects-in-html/

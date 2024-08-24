@@ -1,0 +1,73 @@
+/* =================== mobile navigation =================== */
+/* hide desktop navigation */
+nav#desktop {
+	display: none;
+}
+
+#mobile-nav-open,
+#mobile-nav-close {
+	border: none;
+	background-color: transparent;
+	margin-bottom: 1rem;
+	color: var(--primary-white);
+	font-weight: 600;
+	font-size: 2em;
+}
+
+#mobile-nav-close {
+	margin-bottom: 0.3rem;
+}
+
+#mobile-nav-close>span {
+	color: var(--primary-black);
+}
+
+nav#mobile {
+	background-color: var(--primary-blue);
+	position: fixed;
+	top: 0;
+	right: -100000px;
+	padding: 0.5rem;
+	z-index: 3;
+	width: 100vw;
+	transition: right var(--primary-transition);
+}
+
+nav#mobile.display-menu {
+	right: 0;
+	transition: right var(--primary-transition);
+}
+
+nav#mobile>.mobile-nav.content {
+	text-align: left;
+	padding: 0 1rem 1rem 1rem;
+}
+
+nav#mobile>.mobile-nav.content h1 {
+	font-weight: 500;
+	font-size: 3.5em;
+}
+
+nav#mobile>.mobile-nav.content h3 {
+	font-size: 1em;
+	margin-bottom: 4rem;
+}
+
+nav#mobile .nav-list {
+	text-align: center;
+}
+
+nav#mobile .nav-list-item {
+	list-style: none;
+	margin: 1rem 0;
+}
+
+nav#mobile .nav-link {
+	font-size: 2em;
+	color: var(--primary-black);
+}
+
+nav#mobile .current {
+	font-weight: 600;
+	font-style: italic;
+}

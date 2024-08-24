@@ -21,19 +21,17 @@ async function postData(event) {
 			body: JSON.stringify(user),
 		});
 
-		
 		const status = response.status;
-		
+
 		// 400 and above are client or server errors
 		if (status < 400) {
-			console.log('login: success! navigating to menu page');
+			console.log("login: success! navigating to menu page");
 			const content = await response.json();
 			sessionStorage.setItem("currentUser", JSON.stringify(content.user));
 
 			loginForm.reset();
 
-			window.location.href = '../pages/menu.html';
-			
+			window.location.href = "./menu.html";
 		} else {
 			alert("Sorry, this the wrong username or password. Please try again.");
 			loginForm.reset();

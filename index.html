@@ -4,20 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- google icons -->
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!-- styles -->
+	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="./styles/navigation/mobile-nav.css">
+	<link rel="stylesheet" href="./styles/navigation/desktop-nav.css">
+	<link rel="stylesheet" href="./styles/pages/index/mobile.css">
+	<link rel="stylesheet" href="./styles/pages/index/tablet.css">
+	<link rel="stylesheet" href="./styles/pages/index/desktop.css">
 	<!-- leaflet.js -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
 		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-	<!-- styles -->
-	<link rel="stylesheet" href="./styles/global.css">
-	<link rel="stylesheet" href="./styles/index.css">
-	<script defer src="./scripts/global.js"></script>
-	<script defer src="./scripts/index.js"></script>
-	<title>SubSational Subs | Home</title>
+	<!-- scripts -->
+	<script defer src="./scripts/leaflet.js"></script>
+	<script defer src="./scripts/navigation/mobile.js"></script>
+	<title>SubSational Subs</title>
 </head>
 
 <body>
@@ -60,10 +62,12 @@
 				</ul>
 			</nav>
 			<!-- =================== header content -->
-			<div class="header content">
-				<button type="button" id="mobile-nav-open">
-					<span class="material-symbols-outlined">menu</span>
-				</button>
+			<div class="content">
+				<div id="menu-trigger">
+					<button type="button" id="mobile-nav-open">
+						<span class="material-symbols-outlined">menu</span>
+					</button>
+				</div>
 				<h1 class="header outline-text">Crafted for<br />Flavour Fanatics</h1>
 				<div class="rotate"><a href="./pages/login.html" class="button pink">Order Online Now!</a></div>
 			</div>
@@ -76,12 +80,12 @@
 					symphony of tastes,
 					carefully crafted with premium ingredients and a passion for perfection. Whether you're craving the
 					robust flavours
-					of our classic grilled cheese or the refreshing crunch of our BLT each bite is a journey in taste.
+					of our Smoky Southwestern Cheese Steak or the refreshing crunch of our Tuna Fish sandwich each bite is a journey in taste.
 				</p>
 			</div>
 		</section>
 		<section class="menu container">
-			<div class="menu content">
+			
 				<h2>What's for Lunch?</h2>
 
 				<div class="menu-item container">
@@ -106,7 +110,6 @@
 							<p>Perfect complements to a well-mad sandwich.</p>
 						</div>
 					</div>
-				</div>
 
 				<div class="rotate button"><a href="./pages/login.html" class="button yellow">Explore the Menu</a></div>
 			</div>

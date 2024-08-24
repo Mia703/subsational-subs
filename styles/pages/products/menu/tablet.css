@@ -1,0 +1,17 @@
+/* =================== TABLET =================== */
+@media only screen and (min-width: 40.063em) {
+
+	/* =================== products =================== */
+	section.products>.products.list>.container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/* =================== cart =================== */
+	section.cart .totals {
+		padding-bottom: 2rem;
+	}
+
+	section.cart .totals button {
+		margin-top: 2rem;
+	}
+}

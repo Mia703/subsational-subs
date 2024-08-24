@@ -1,0 +1,43 @@
+/* =================== grid styles =================== */
+
+/* =================== MOBILE =================== */
+#main-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0px;
+}
+
+#main-grid>section,
+#main-grid>.section {
+	grid-column: span 4;
+	padding: 1rem;
+}
+
+#main-grid>section:not(:first-child),
+#main-grid>.section:not(:first-child) {
+	padding: 2rem 1rem;
+}
+
+/* =================== TABLET =================== */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	#main-grid {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	#main-grid>section,
+	#main-grid>.section {
+		grid-column: span 6;
+	}
+}
+
+/* =================== DESKTOP =================== */
+@media only screen and (min-width: 64.063em) {
+	#main-grid {
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	#main-grid>section,
+	#main-grid>.section {
+		grid-column: span 12;
+	}
+}

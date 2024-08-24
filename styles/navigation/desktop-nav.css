@@ -1,0 +1,42 @@
+/* =================== desktop navigation =================== */
+@media only screen and (min-width: 64.063em) {
+
+	/* hide mobile navigation */
+	nav#mobile {
+		display: none;
+	}
+
+	nav#desktop {
+		display: block;
+		position: relative;
+		padding: 1rem 4rem;
+		z-index: 2;
+	}
+
+	#mobile-nav-open {
+		display: none;
+	}
+
+	nav#desktop>.nav-list.desktop {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	nav#desktop>.nav-list.desktop>.nav-list-item {
+		display: inline-block;
+		list-style: none;
+	}
+
+	nav#desktop>.nav-list.desktop>.nav-list-item>.nav-link {
+		color: var(--primary-white);
+		font-weight: 600;
+		font-size: 2.3em;
+		cursor: pointer;
+	}
+
+	nav#desktop>.nav-list.desktop>.nav-list-item>.nav-link:hover {
+		font-style: italic;
+	}
+}

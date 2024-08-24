@@ -1,0 +1,42 @@
+/* =================== TABLET =================== */
+@media only screen and (min-width: 40.063em) {
+
+	/* ---------- header ---------- */
+	section.header {
+		height: 45vh;
+	}
+
+	section.header>.header.content h1 {
+		font-size: 4em;
+	}
+
+	/* ---------- about container ---------- */
+
+	/* ---------- menu ---------- */
+	.menu-item.container>.item {
+		grid-column: span 1;
+	}
+
+	.menu-item.container>.item>.image.container {
+		height: 20vh;
+	}
+
+	/* ---------- location ---------- */
+	#map {
+		height: 35vh;
+	}
+
+	/* ---------- action ---------- */
+	section.action {
+		height: 45vh;
+	}
+
+	section.action>.action.content {
+		margin: 1rem 3rem;
+	}
+
+	/* ---------- footer ---------- */
+	footer>.footer.content>* {
+		grid-column: span 1;
+	}
+}
