@@ -3,10 +3,13 @@
 
 	/* ---------- header ---------- */
 	section.header {
-		height: 75vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	section.header >.content {
+		padding-top: 6rem;
 	}
 
 	/* ---------- about ---------- */
