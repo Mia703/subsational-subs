@@ -3,7 +3,7 @@
 /* =================== MOBILE =================== */
 a.button,
 button {
-	padding: 10px 15px;
+	padding: 15px 20px;
 	border-radius: 1000000px;
 	border: var(--primary-border);
 	font-family: 'Anybody', sans-serif;
@@ -48,17 +48,9 @@ button.orange {
 
 /* =================== DESKTOP =================== */
 @media only screen and (min-width: 64.063em) {
-
+	
 	a.button,
 	button {
-		padding: 10px 15px;
-		border-radius: 1000000px;
-		border: var(--primary-border);
-		font-family: 'Anybody', sans-serif;
-		font-weight: 600;
-		color: var(--primary-black);
 		font-size: 1.5em;
-		cursor: pointer;
-		font-style: italic;
 	}
 }

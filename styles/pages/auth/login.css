@@ -62,11 +62,6 @@ section.header>.header.content {
 	margin-right: 5px;
 }
 
-.form.container>.container a {
-	color: var(--primary-black);
-	text-decoration: underline;
-}
-
 section.header>.overlay {
 	position: fixed;
 	top: 0;

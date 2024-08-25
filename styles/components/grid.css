@@ -8,14 +8,9 @@
 }
 
 #main-grid>section,
-#main-grid>.section {
+#main-grid>footer {
 	grid-column: span 4;
 	padding: 1rem;
-}
-
-#main-grid>section:not(:first-child),
-#main-grid>.section:not(:first-child) {
-	padding: 2rem 1rem;
 }
 
 /* =================== TABLET =================== */

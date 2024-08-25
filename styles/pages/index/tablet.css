@@ -6,19 +6,38 @@
 		height: 45vh;
 	}
 
-	section.header>.header.content h1 {
-		font-size: 4em;
-	}
-
 	/* ---------- about container ---------- */
 
 	/* ---------- menu ---------- */
-	.menu-item.container>.item {
+	section.menu .menu-item .item {
 		grid-column: span 1;
+		padding: 0;
 	}
 
-	.menu-item.container>.item>.image.container {
-		height: 20vh;
+	section.menu .menu-item .item>.image.container {
+		height: 15rem;
+		background-color: lightgrey;
+		border-bottom: var(--primary-border);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	section.menu .menu-item .item:first-child>.image.container {
+		background-image: url('../../../assets/pexels-polina-tankilevitch-5419221.jpg');
+	}
+
+	section.menu .menu-item .item:nth-child(2)>.image.container {
+		background-image: url('../../../assets/pexels-geraud-pfeiffer-6608664.jpg');
+	}
+
+
+	section.menu .menu-item .item:nth-child(3)> .image.container{
+		background-image: url('../../../assets/pexels-karolina-grabowska-4389641.jpg');
+	}
+
+	section.menu .menu-item .item>.content {
+		padding: 1rem;
 	}
 
 	/* ---------- location ---------- */
@@ -36,7 +55,5 @@
 	}
 
 	/* ---------- footer ---------- */
-	footer>.footer.content>* {
-		grid-column: span 1;
-	}
+
 }
