@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- styles -->
+	<link rel="stylesheet" href="../styles/global.css">
+	<link rel="stylesheet" href="../styles/navigation/mobile-nav.css">
+	<link rel="stylesheet" href="../styles/navigation/desktop-nav.css">
+	<link rel="stylesheet" href="../styles/pages/about/mobile.css">
+	<link rel="stylesheet" href="../styles/pages/about/tablet.css">
+	<link rel="stylesheet" href="../styles/pages/about/desktop.css">
+	<!-- scripts -->
+	<script defer src="../scripts/navigation/mobile.js"></script>
+	<script defer src="../scripts/pages/auth/login.js"></script>
 	<title>SubSational Subs | About</title>
 </head>
+
 <body>
-	hip
+	<div id="main-grid">
+		<section class="navigation">
+			<!-- =================== mobile navigation -->
+			<nav id="mobile">
+				<button type="button" id="mobile-nav-close">
+					<span class="material-symbols-outlined">close</span>
+				</button>
+				<div class="mobile-nav content">
+					<h1>SubSational Subs</h1>
+					<h3>Your summer sub destination.</h3>
+					<ul class="nav-list mobile">
+						<li class="nav-list-item mobile">
+							<a href="../index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-list-item mobile">
+							<a href="about.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-list-item mobile">
+							<a href="./login.html" class="nav-link current">Order Online</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- =================== desktop navigation -->
+			<nav id="desktop">
+				<ul class="nav-list desktop">
+					<li class="nav-list-item desktop">
+						<a href="../index.html" class="nav-link desktop">SubSational Subs</a>
+					</li>
+					<li class="nav-list-item desktop">
+						<a href="about.html" class="nav-link desktop">About</a>
+					</li>
+					<li class="nav-list-item desktop">
+						<a href="./login.html" class="nav-link desktop">Order Online</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header content">
+				<button type="button" id="mobile-nav-open">
+					<span class="material-symbols-outlined">menu</span>
+				</button>
+			</div>
+		</section>
+		<section class="our-story">
+			<div class="container">
+				<h2>Our Story</h2>
+				<p>
+					At SubSational, we believe that every meal should be a delightful adventure. Our passion for creating
+					exceptional
+					sandwiches goes beyond the ordinary, transforming every sub into a celebration of flavour and quality.
+					Our founders, a
+					group of students and food lovers, set out to craft a menu that combines premium ingredients,
+					with innovative recipes to create sandwiches that would spice up the summer.
+				</p>
+			</div>
+		</section>
+		<section class="family">
+			<div class="container">
+				<h2>From Us to You</h2>
+				<p>
+					Thank you for choosing SubSational. We invite you to explore our menu, savour our flavors, and become part of
+					our
+					growing
+					family. Here’s to many more delicious adventures together!
+				</p>
+			</div>
+		</section>
+	</div>
 </body>
+
 </html>

@@ -1,0 +1,31 @@
+#main-grid {
+	height: 100vh;
+}
+
+#mobile-nav-open {
+	margin-bottom: 0;
+}
+
+#mobile-nav-open > span {
+	color: var(--primary-black);
+}
+
+section:not(:last-child) {
+	border-bottom: var(--primary-border);
+}
+
+section:nth-child(2) {
+	background-color: var(--primary-pink);
+}
+
+section:nth-child(3) {
+	background-color: var(--primary-yellow);
+}
+
+section > .container h2 {
+	margin-bottom: 0.5rem;
+}
+
+section > .container {
+	padding: 1rem;
+}

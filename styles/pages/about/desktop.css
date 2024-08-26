@@ -1,0 +1,6 @@
+/* =================== DESKTOP =================== */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+	nav#desktop>.nav-list.desktop>.nav-list-item>.nav-link {
+		color: var(--primary-black);
+	}
+}

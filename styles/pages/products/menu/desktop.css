@@ -45,7 +45,7 @@
 		margin-bottom: 1rem;
 		border-bottom: var(--primary-border);
 	}
-	
+
 	section.cart .order-items .order-item {
 		font-size: 0.8em;
 		display: flex;
@@ -57,6 +57,12 @@
 
 	section.cart .order-items .order-item .name {
 		margin-right: 1rem;
+	}
+
+	section.cart .order-items .order-item .delete-btn {
+		margin-left: 1rem;
+		background-color: green;
+		cursor: pointer;
 	}
 
 	section.cart .totals {

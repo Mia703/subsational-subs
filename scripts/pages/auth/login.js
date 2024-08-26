@@ -1,3 +1,8 @@
+/***
+ * Amya Moore
+ * ICT 4510 - Summer 2024
+ * logs in user
+ */
 const loginForm = document.getElementById("login-form");
 const url = loginForm.action;
 

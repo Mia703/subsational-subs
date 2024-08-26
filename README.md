@@ -24,7 +24,7 @@
 - Done: ~A display of your menu items.~
 - Done: ~The menu/ordering page is only rendered after a user has been successfully logged in.~
 - Done: ~Each menu item must container the item name, its description and price.~
-- HELP: The Ordering form will make an Ajax POST request to "<https://ict4510.herokuapp.com/api/menus?api_key=your-api-key>".
+- Done: ~The Ordering form will make an Ajax POST request to "<https://ict4510.herokuapp.com/api/menus?api_key=your-api-key>".~
 - Done: ~The request must container the session token in the request header.~
 - Done: ~A successful 200 (or 201?) request should be returned.~
 

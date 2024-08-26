@@ -1,3 +1,9 @@
+/***
+ * Amya Moore
+ * ICT 4510 - Summer 2024
+ * displays all product images
+ */
+
 const imagePath = "../../assets/product_images/";
 
 const hotSubs = [
@@ -323,13 +329,15 @@ const sidesContainer = document.querySelector(".sides.container");
 let hotSubsParagraph = "";
 hotSubs.forEach((item) => {
 	hotSubsParagraph += `
-		<div class="product card hot">
+		<div id=${item.id} class="product card hot">
 				<div class="image container">
 					<img alt="${item.name}" src="${imagePath + item.image}">
 				</div>
 					<p class="name">${item.name}</p>
 					<p class="description">${item.description}.</p>
-					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${item.price}</span></button>
+					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${
+						item.price
+					}</span></button>
 		</div>
 	`;
 });
@@ -344,7 +352,9 @@ coldSubs.forEach((item) => {
 				</div>
 					<p class="name">${item.name}</p>
 					<p class="description">${item.description}.</p>
-					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${item.price}</span></button>
+					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${
+						item.price
+					}</span></button>
 		</div>
 	`;
 });
@@ -359,7 +369,9 @@ sides.forEach((item) => {
 				</div>
 					<p class="name">${item.name}</p>
 					<p class="description">${item.description}.</p>
-					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${item.price}</span></button>
+					<button type="button" class="cart button yellow">Add to Cart <span class="price">$${
+						item.price
+					}</span></button>
 		</div>
 	`;
 });

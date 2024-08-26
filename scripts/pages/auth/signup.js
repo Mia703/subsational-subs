@@ -1,3 +1,9 @@
+/***
+ * Amya Moore
+ * ICT 4510 - Summer 2024
+ * signs up user
+ */
+
 const signupForm = document.getElementById("signup-form");
 const url = signupForm.action;
 
